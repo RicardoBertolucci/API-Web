@@ -1,14 +1,14 @@
 .containerSchedule {
-    background: #A9C1ED;
-    height: 20vh;
+    height: 216px;
     padding-top: 10px;
 }
 
 .titleSchedule {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
+    color: #000000;
 }
 
 .btnSchedule {
@@ -24,6 +24,8 @@
     border: none;
     height: 35px;
     padding: 0 0 0 5px;
+    background-color: #cdcdcd;
+    width: 200px;
 }
 
 .inputSearch:focus {
@@ -39,10 +41,12 @@
     height: 35px;
     padding: 0 5px;
     cursor: pointer;
+    background-color: #cdcdcd;
+    transition: .5s;
 }
 
 .pesquisar:hover {
-    background-color: #d9d9d9;
+    background-color: #c1c1c1;
 }
 
 .cadastrar {
@@ -53,8 +57,10 @@
     font-weight: 600;
     cursor: pointer;
     transition: .5s;
+    background: #cdcdcd;
+    width: 150px;
 }
 
 .cadastrar:hover {
-    background-color: #d9d9d9;
+    background-color: #c1c1c1;
 }
