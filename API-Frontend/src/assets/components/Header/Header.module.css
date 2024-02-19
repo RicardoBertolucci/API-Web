@@ -1,0 +1,60 @@
+.containerSchedule {
+    background: #A9C1ED;
+    height: 20vh;
+    padding-top: 10px;
+}
+
+.titleSchedule {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btnSchedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 3rem 0;
+}
+
+.inputSearch {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    height: 35px;
+    padding: 0 0 0 5px;
+}
+
+.inputSearch:focus {
+    outline: none;
+}
+
+.pesquisar {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    height: 35px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.pesquisar:hover {
+    background-color: #d9d9d9;
+}
+
+.cadastrar {
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    width: 120px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cadastrar:hover {
+    background-color: #d9d9d9;
+}
