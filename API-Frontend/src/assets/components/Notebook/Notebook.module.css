@@ -1,7 +1,7 @@
 
 .containerSchedule {
     background-image: url(../../img/BackgroundAzul.avif);
-    height: 76.1vh;
+    height: 76.3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,6 @@
     -webkit-backdrop-filter: blur(3.5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: 70vh;
-    width: 94vw;
+    width: 80vw;
     margin: 0 auto;
 }
