@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Contact extends Model {
     static associate(models) {
-      // Contact.belongsTo(models.Telephone, {foreignKey: "ID"})
+      Contact.hasMany(models.Telephone, {foreignKey: "ID"})
     }
   }
   Contact.init({
@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true, 
       autoIncrement: true 
     },
-    NOME: DataTypes.STRING,
+    NOME: { 
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     IDADE: DataTypes.INTEGER
   }, {
     sequelize,

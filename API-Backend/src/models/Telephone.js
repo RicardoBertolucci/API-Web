@@ -5,15 +5,20 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Telephone extends Model {
     static associate(models) {
-      // Telephone.hasMany(models.Contact, { foreignKey:"IDCONTACT" })
+      Telephone.belongsTo(models.Contact, { foreignKey:"IDCONTACT" })
     }
   }
   Telephone.init({
-    ID: DataTypes.INTEGER,
+    ID: {
+      type: DataTypes.INTEGER,
+      primaryKey: true, 
+      autoIncrement: true
+    },
     NUMBER: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Telephone',
+    tableName: 'Telephone',
     timestamps: true,
     createdAt: "CREATEAT", 
     updatedAt: "UPDATEAT",
